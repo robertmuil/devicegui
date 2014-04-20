@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:tag="deviceStateView">
+	<FrameLayout
+		android:id="@+id/deviceTitleTopHalf"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_margin="0dp"
+		android:paddingBottom="8sp" />
+	<RelativeLayout
+		android:id="@+id/relativeLayout1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/deviceTitleTopHalf"
+		android:background="@drawable/border" >
+		<FrameLayout
+			android:id="@+id/deviceTitleBottomHalf"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_margin="0dp"
+			android:paddingBottom="8sp" />
+		<ImageView
+			android:id="@+id/deviceStateIcon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:layout_below="@+id/deviceTitleBottomHalf"
+			android:layout_alignParentLeft="true"
+			android:src="@drawable/ic_devicestate_nostate"
+			android:contentDescription="@string/text_devicestateicon_contentdesc"
+			/>
+		<TextView
+			android:id="@+id/deviceIDText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/deviceStateIcon"
+			android:layout_below="@id/deviceTitleBottomHalf"
+			android:text="@string/text_unknown_deviceid" />
+		<TextView
+			android:id="@+id/deviceStateText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/deviceStateIcon"
+			android:layout_below="@id/deviceIDText"
+			android:text="@string/text_unknown_state" />
+		
+		<TextView
+			android:id="@+id/deviceCurrentValue"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/deviceStateIcon"
+			android:layout_below="@id/deviceStateText"
+			android:text="@string/text_unknown_currentvalue" />
+		<ImageView
+			android:id="@+id/heartOutAttachedIcon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignBottom="@id/deviceStateIcon"
+			android:src="@drawable/ic_heartout_attached"
+			android:contentDescription="@string/text_heartouticon_contentdesc"
+			/>
+	</RelativeLayout>
+	<TextView
+		android:id="@+id/deviceTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="10dp"
+		android:background="@android:color/black"
+		android:padding="0dp"
+		android:text="@string/text_unknown_type"
+		android:textSize="16sp" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_connect_title">Connect</string>
+    <string name="button_predisconnect_title">Disconnect…</string>
+    <string name="button_disconnect_title">Disconnect</string>
+    <string name="button_start_title">Start</string>
+    <string name="button_stop_title">Stop</string>
+    <string name="button_cancel_title">Cancel</string>
+    <string name="text_unknown_state">&lt;Unknown State&gt;</string>
+    <string name="text_unknown_currentvalue">-</string>
+    <string name="text_unknown_type">&lt;Type&gt;</string>
+    <string name="text_unknown_deviceid">&lt;Unknown ID&gt;</string>
+    <string name="text_devicestateicon_contentdesc">This icon indicates the current state of a specific device (DataSource or DataSink)</string>
+    <string name="text_heartouticon_contentdesc">This icon indicates that the HeartOut DataSink is attached to this device.</string>
+	</resources>
